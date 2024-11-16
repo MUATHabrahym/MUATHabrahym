@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* النصوص الأساسية */
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      135deg, 
+      #ff7eb3, 
+      #ff758c, 
+      #f05454, 
+      #fdfd96, 
+      #9cf6f6, 
+      #32a7a7, 
+      #8e44ad,
+      #ff7eb3, #ff758c, #f05454, 
+      #ff6a00, #fbd64e, #ffcb74, 
+      #1e3c72, #2a5298, #9cf6f6, 
+      #32a7a7, #8e44ad, #ff9966, 
+      #ff5e62, #004e92, #000428, 
+      #ff7e5f, #feb47b, #d299c2, 
+      #f6d365, #fda085, #ffb6c1, 
+      #ff6600, #ff6347, #f0e68c, 
+      #7fffd4, #00bfff, #4682b4, 
+      #9acd32, #32cd32, #ff1493, 
+      #ff4500, #adff2f, #7fff00, 
+      #40e0d0, #ff00ff, #c71585, 
+      #8a2be2, #b22222, #9932cc, 
+      #dda0dd, #ff8c00, #cd5c5c, 
+      #f4a300, #6a5acd, #4682b4, 
+      #008b8b, #800080, #ff0000, 
+      #ff8000, #00ff00
+      
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+h1, h2, .role {
+  font-family: 'Poppins', sans-serif; /* العناوين */
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 600; /* عريض */
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #ffcb74;
+  font-weight: 400; /* متوسط السمك */
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #ffcb74;
+  padding-bottom: 5px;
+  color: #ffcb74;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #ffcb74;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+      padding: 20px;
+  }
+  h1 {
+      font-size: 2rem;
+  }
+  h2 {
+      font-size: 1.5rem;
+  }
+  p, li {
+      font-size: 1rem;
+  }
+}
